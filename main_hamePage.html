@@ -1,0 +1,224 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Helpigo - Personal Assistant</title>
+
+    <link rel="stylesheet" href="main_homePage.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="main-container">
+
+    <!-- Navbar -->
+    <header class="navbar">
+
+        <div class="logo">
+            <div class="logo-icon">H</div>
+            <span>Helpigo</span>
+        </div>
+
+        <button class="menu-toggle" id="menuToggle">☰</button>
+
+        <nav class="nav-links" id="navLinks">
+            <a href="#home" class="active">Home</a>
+            <a href="#services">Services</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="nav-right">
+
+            <select class="location">
+                <option>📍 Dhaka</option>
+                <option>Mirpur</option>
+                <option>Dhanmondi</option>
+                <option>Uttara</option>
+                <option>Mohammadpur</option>
+            </select>
+
+            <button class="language-btn" id="languageBtn">
+                EN | বাংলা
+            </button>
+
+            <button class="login-btn" onclick="login()">
+                Login
+            </button>
+
+        </div>
+
+    </header>
+
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+
+        <div class="hero-content">
+
+            <h1>
+                Your Personal Assistant
+                <br>
+                On-Demand <span>in Dhaka</span>
+            </h1>
+
+            <p>
+                Hire a trusted assistant for medicine, shopping,
+                <br class="desktop-break">
+                parcel pickup and more — anytime, anywhere!
+            </p>
+
+            <div class="search-box">
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="Search services.. (e.g. Medicine, Market)"
+                >
+
+                <button onclick="searchService()">⌕</button>
+            </div>
+
+        </div>
+
+        <!-- Hero Person -->
+        <div class="hero-person">
+            <div class="person-image">
+                <img
+                    src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=600"
+                    alt="Helpigo Assistant"
+                >
+            </div>
+            <div class="person-label">
+                <span>✓</span> Helpigo Assistant
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- Features Section -->
+    <section class="features">
+
+        <div class="feature">
+            <div class="feature-icon">🛡️</div>
+            <span>Trusted<br>Helpers</span>
+        </div>
+
+        <div class="feature">
+            <div class="feature-icon">⚡</div>
+            <span>Fast Service</span>
+        </div>
+
+        <div class="feature">
+            <div class="feature-icon">📍</div>
+            <span>Only in Dhaka</span>
+        </div>
+
+        <div class="feature">
+            <div class="feature-icon">♧</div>
+            <span>Secure Payment</span>
+        </div>
+
+    </section>
+
+
+    <!-- Services Section -->
+    <section class="services-section" id="services">
+
+        <div class="section-heading">
+            <h2>Our Services</h2>
+            <p>Choose what you need in Dhaka</p>
+        </div>
+
+        <div class="services-grid">
+
+            <!-- Medicine -->
+            <div class="service-card medicine"
+                 onclick="selectService('Medicine Delivery')">
+
+                <div class="service-icon">💊</div>
+
+                <h3>Medicine<br>Delivery</h3>
+
+                <p>Get your medicine<br>from any pharmacy</p>
+
+            </div>
+
+
+            <!-- Market -->
+            <div class="service-card market"
+                 onclick="selectService('Market Shopping')">
+
+                <div class="service-icon">🛒</div>
+
+                <h3>Market<br>Shopping</h3>
+
+                <p>Let us do your<br>market for you</p>
+
+            </div>
+
+
+            <!-- Parcel -->
+            <div class="service-card parcel"
+                 onclick="selectService('Parcel Collection')">
+
+                <div class="service-icon">📦</div>
+
+                <h3>Parcel<br>Collection</h3>
+
+                <p>Pick up your parcel</p>
+
+            </div>
+
+
+            <!-- Personal Task -->
+            <div class="service-card personal"
+                 onclick="selectService('Personal Task')">
+
+                <div class="service-icon">📋</div>
+
+                <h3>Personal<br>Task</h3>
+
+                <p>Any task, any time</p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- About Section -->
+    <section class="about-section" id="about">
+
+        <h2>Why Choose Helpigo?</h2>
+
+        <p>
+            Helpigo makes your daily life easier.
+            Get trusted personal assistance whenever
+            you need it in Dhaka.
+        </p>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer id="contact">
+
+        <h2>Helpigo</h2>
+
+        <p>Your Personal Assistant On-Demand</p>
+
+        <p>© 2026 Helpigo. All Rights Reserved.</p>
+
+    </footer>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
